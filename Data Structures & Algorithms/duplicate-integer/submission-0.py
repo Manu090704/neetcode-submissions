@@ -1,0 +1,11 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        thisSet = set()
+        for i in range(len(nums)):
+            if nums[i] in thisSet:
+                return True
+            thisSet.add(nums[i])
+        return False
+        
+        
+        
